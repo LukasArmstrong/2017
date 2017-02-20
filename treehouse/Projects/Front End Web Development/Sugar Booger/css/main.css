@@ -1,0 +1,87 @@
+/*********************
+SUGAR BOOGER CSS
+*********************/
+/****************
+GENRAL
+****************/
+.main-header,
+.main-nav,
+.Baked_Goods,
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+img{
+  max-width: 100%;
+}
+ul{
+  font-size: 1.5em;
+}
+h2, h3, h4{
+  font-family: 'Caveat Brush', sans-serif;
+  font-size: 1.375em;
+  text-decoration: underline;
+  color: #fff;
+}
+p{
+  font-family: 'Caveat Brush', sans-serif;
+  color: #fff;
+}
+.Shelby{
+  display: flex;
+  align-items: center;
+}
+/****************
+HEADING
+****************/
+h1{
+  margin: 15px 0;
+  font-size: 5em;
+}
+h1, li{
+    font-family: 'Caveat Brush', sans-serif;
+}
+/****************
+PAGE: PORTFOLIO
+****************/
+.Baked_Goods, .main-nav{
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+/****************
+COLOR
+****************/
+/*site body
+Background color purple-pinkish
+text color: grey*/
+body{
+  background: #ddc5e7;
+  color: #999;
+}
+/****************
+MEDIA
+****************/
+//*
+@media (min-width: 769px) {
+  .Baked_Goods {
+	   justify-content: center;
+     flex-flow: column wrap;
+      align-content: stretch;
+  }
+} */
+@media (min-width: 769px) {
+	.col {
+		flex: 1;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    align-content: flex-end;
+	}
+}
