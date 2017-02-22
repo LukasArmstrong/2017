@@ -4,20 +4,13 @@ SUGAR BOOGER CSS
 /****************
 GENRAL
 ****************/
-.main-header,
-.main-nav,
-.Baked_Goods,
-.col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 a{
   text-decoration: none;
   color: #fff;
 }
 img{
-  max-width: 100%;
+  max-width: 95%;
 }
 ul{
   font-size: 1.5em;
@@ -49,10 +42,15 @@ h1, li{
 /****************
 PAGE: PORTFOLIO
 ****************/
-.Baked_Goods, .main-nav{
+.Baked_Goods, ul{
   margin:0;
   padding: 0;
   list-style: none;
+}
+.main-nav a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
 }
 /****************
 COLOR
@@ -67,21 +65,43 @@ body{
 /****************
 MEDIA
 ****************/
-//*
 @media (min-width: 769px) {
-  .Baked_Goods {
-	   justify-content: center;
-     flex-flow: column wrap;
-      align-content: stretch;
-  }
-} */
-@media (min-width: 769px) {
-	.col {
-		flex: 1;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-flow: row wrap;
-    align-content: flex-end;
+
+	.main-header,
+	.main-nav,
+	.Baked_Goods,
+  .col{
+		display: flex;
 	}
+
+	.main-header{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.col {
+		flex-direction: column;
+		align-items: center;
+		flex: 1 50%;
+	}
+
+	.Baked_Goods {
+		flex-wrap: wrap;
+	}
+
+}
+
+@media (min-width: 1025px) {
+
+	.main-header {
+    align-items: center;
+		flex-direction: column;
+    justify-content: space-between;
+	}
+	.col {
+		flex-direction: column;
+  	align-items: center;
+		flex-basis: 0;
+	}
+
 }
