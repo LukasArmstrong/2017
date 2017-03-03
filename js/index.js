@@ -15,7 +15,8 @@ var gen1=`
     <p>`
 var gen2=`
     </P>
-    <img id="myImg" src="img/`;
+    <img id="myImg`
+var test=`" src="img/`;
 var gen3= `" alt="">
     <div id="myModal" class="modal">
       <!-- Modal content -->
@@ -53,19 +54,19 @@ var cookies=`<div class="Cookies col">
 `;
 print(cakes);
 for(i=0;i<3;i++){
-  html1 = gen1+names[i]+gen2+names[i]+".jpg"+gen3+names[i]+".jpg"+gen4;
+  html1 = gen1+names[i]+gen2+i+test+names[i]+".jpg"+gen3+names[i]+".jpg"+gen4;
   print(html1);
 };
 print(div);
 print(brownies);
 for(i=3;i<6;i++){
-  html2 = gen1+names[i]+gen2+names[i]+".jpg"+gen3+names[i]+".jpg"+gen4;
+  html2 = gen1+names[i]+gen2+i+test+names[i]+".jpg"+gen3+names[i]+".jpg"+gen4;
   print(html2);
 };
 print(div);
 print(cookies);
 for(i=6;i<9;i++){
-  html3 = gen1+names[i]+gen2+names[i]+".jpg"+gen3+names[i]+".jpg"+gen4;
+  html3 = gen1+names[i]+gen2+i+test+names[i]+".jpg"+gen3+names[i]+".jpg"+gen4;
   print(html3);
 };
 print(div);

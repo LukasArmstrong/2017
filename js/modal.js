@@ -17,11 +17,21 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
-var img = document.getElementById('myImg');
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
+function print(message) {
+  document.write(message);
+}
+var i
+var html1 = '<script>var img'
+var html2 = ` = document.getElementById('myImg`
+var html3 = `');
+img`
+var html4 = `.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
+}</script>`
+for(i=0;i<9;i++){
+  print(html1+i+html2+i+html3+i+html4);
 }
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
