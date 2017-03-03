@@ -10,7 +10,7 @@ var names=["The Ultimate Reese\'s Cupcake",
 function print(message) {
   document.write(message);
 }
-var gen1=`>
+var gen1=`
   <li>
     <p>`
 var gen2=`
@@ -50,16 +50,19 @@ var brownies=`<div class="Brownies col">
 `
 var cookies=`<div class="Cookies col">
   <h4>Cookies</h4>
-`
-for(i=0;i<=2;i++){
-  html1 = cakes+gen1+names[i]+gen2+names[i]+".jpg"+gen3+names[i]+".jpg"+gen4;
-  print(html);
+`;
+print(cakes);
+for(i=0;i<3;i++){
+  html1 = gen1+names[i]+gen2+names[i]+".jpg"+gen3+names[i]+".jpg"+gen4;
+  print(html1);
 };
-for(i=3;i<=5;i++){
-  html2 = brownies+gen1+names[i]+gen2+names[i]+".jpg"+gen3+names[i]+".jpg"+gen4;
-  print(html);
+print(brownies);
+for(i=3;i<6;i++){
+  html2 = gen1+names[i]+gen2+names[i]+".jpg"+gen3+names[i]+".jpg"+gen4;
+  print(html2);
 };
-for(i=6;i<=8;i++){
-  html3 = cookies+gen1+names[i]+gen2+names[i]+".jpg"+gen3+names[i]+".jpg"+gen4;
-  print(html);
+print(cookies);
+for(i=6;i<9;i++){
+  html3 = gen1+names[i]+gen2+names[i]+".jpg"+gen3+names[i]+".jpg"+gen4;
+  print(html3);
 };
