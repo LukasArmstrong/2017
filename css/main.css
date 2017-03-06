@@ -9,6 +9,13 @@ a{
   text-decoration: none;
   color: #fff;
 }
+a:hover{
+  opacity: .5;
+}
+a:link,
+a:visited{
+  text-decoration: underline;
+}
 img{
   max-width: 95%;
 }
@@ -17,9 +24,9 @@ ul{
 }
 h2{
   font-family: 'Caveat Brush', sans-serif;
-  font-size: 1.375em;
-  text-decoration: underline;
+  font-size: 1.225em;
   color: #fff;
+  padding-top: 25px;
 }
 p{
   font-family: 'Caveat Brush', sans-serif;
@@ -131,12 +138,16 @@ Modals
     color: white;
 }
 
-.modal-body {padding: 2px 16px;}
+.modal-body {
+  display: flex;
+  padding: 16px 16px;
+}
 
-.modal-footer {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
+/****************
+MODALS DESIGN
+****************/
+.img01{
+  justify-content: center;
 }
 /****************
 MEDIA
