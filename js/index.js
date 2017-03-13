@@ -7,6 +7,9 @@ var names=["The Ultimate Reese\'s Cupcake",
            "Cookies and Cream Cookies",
            "Double Chocolate Cookies",
            "Mint Chip Oreos"];
+var description=[`This recipe is the ULTIMATE Reese’s Peanut Butter Cup Cupcake! With swirled chocolate peanut butter cake and
+swirled chocolate peanut butter buttercream then topped with a peanut butter cup... I think you can see why it’s the ultimate
+Reese’s cupcake!`,]
 function print(message) {
   document.write(message);
 }

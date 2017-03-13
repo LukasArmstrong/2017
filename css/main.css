@@ -12,8 +12,7 @@ a{
 a:hover{
   opacity: .5;
 }
-a:link,
-a:visited{
+a:link{
   text-decoration: underline;
 }
 img{
