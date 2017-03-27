@@ -6,19 +6,37 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <script src="contact.js"></script>
   </head>
   <body>
     <header class="main-header">
-      <h1><a href="index.html" id="logo">Sugar Booger</a></h1>
+      <img class="logo" src="img/Sugar Booger.png">
       <ul class="main-nav">
         <li><a href="index.html">Menu</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </header>
-    <img src="img/Shelby.jpg" alt="" class="Shelby">
-    <p>
-      Hello, I'm Shelby and I'm the owner of Sugar Booger! Feel free to message me!
-    </p>
+    <div class="contact">
+      <div id="after_submit"></div>
+      <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+        <div class="rowc">
+          <label class="required" for="name">Your name:</label><br />
+          <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+          <span id="name_validation" class="error_message"></span>
+        </div>
+        <div class="rowc">
+          <label class="required" for="email">Your email:</label><br />
+          <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+          <span id="email_validation" class="error_message"></span>
+        </div>
+        <div class="row">
+          <label class="required" for="message">Your message:</label><br />
+          <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+          <span id="message_validation" class="error_message"></span>
+        </div>
+        <input id="submit_button" type="submit" value="Send email" />
+      </form>
+    </div>
   </body>
   </html>
