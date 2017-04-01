@@ -8,7 +8,7 @@
    - **Planned way of fixing:** using JQuery to make when clicked on one of the elements, uses a *this* and not am *id*
 
 ##### Suggestions for improvement:
-    1. Hover for link
+   1. Hover for link
     2. add active so users know where they are in the site.
     3. work on CSS for the modals
     4. add a shopping feature.
